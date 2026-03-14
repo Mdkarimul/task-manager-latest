@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use "assets/styles/base/color" as colors;
+@import "ngx-toastr/toastr";
+
+body {
+  font-family: "Roboto Slab", serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.highlight-text {
+  color: var(--purple-400);
+  font-weight: var(--font-weight-extrabold);
+  font-style: italic;
+background: linear-gradient(153deg,rgb(160, 8, 152) 0%, rgba(165, 0, 157, 1) 94%);
+  background-size: 200%;
+  background-clip: text;
+  --webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn-primary {
+  border: 1px solid transparent;
+  padding: 10px 15px;
+  background-color: var(--purple-500);
+  color: var(--white-200);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: var(--font-weight-light);
+  letter-spacing: 1.5px;
+}
+
+.btn-secondary {
+  padding: 10px 15px;
+  background-color: transparent;
+  color: var(--white-100);
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-extralight);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--white-100);
+}
+button {
+  position: relative;
+}
+
+.bg-gradient {
+  background: #00d1c3;
+  background: linear-gradient(
+    153deg,
+    rgba(0, 209, 195, 1) 0%,
+    rgba(0, 73, 68, 1) 100%
+  );
+}

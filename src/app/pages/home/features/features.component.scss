@@ -1,0 +1,50 @@
+@use '../../../../assets/styles/base/color' as colors;
+@use '../../../../assets/styles/base/typography' as type;
+
+.cont {
+    width: 100%;
+    height:300px;
+    background-color: colors.$bg-primary-light;
+    padding: 3rem 6rem;
+    display:grid;
+    grid-template-columns:1fr 3fr;
+    margin-bottom: 150px;
+
+}
+.cont .features-header {
+
+}
+.cont .features-header h3 {
+    font-size: type.$font-size-3xl;
+    line-height: type.$line-height-xs;
+    color: colors.$text-color-primary-light;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 20px;
+}
+
+.cont .features-cont {
+    display: flex;
+    gap: 2rem;
+    margin-left: 3rem;
+}
+.cont .features-cont .feature-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: colors.$bg-secondary-ligth;
+    padding:2rem;
+}
+.cont .features-cont .feature-card h4 {
+    font-size: type.$font-size-xl;
+    line-height: type.$line-height-sm;
+    color: colors.$text-color-secondary-light;
+    font-weight: var(--font-weight-semibold);
+}
+.feature-icon {
+    font-size: 3rem;
+    color: colors.$brand-primary;
+}

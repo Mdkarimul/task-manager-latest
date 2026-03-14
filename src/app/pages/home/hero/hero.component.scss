@@ -1,0 +1,72 @@
+@use "../../../../assets/styles/base/color" as colors;
+@use "../../../../assets/styles/base/typography" as type;
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 15vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background: #00d1c3;
+  background: linear-gradient(
+    153deg,
+    rgba(0, 209, 195, 1) 0%,
+    rgba(0, 73, 68, 1) 100%
+  );
+
+  div {
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    color: colors.$text-color-primary-dark;
+    font-size: type.$font-size-5xl;
+    line-height: type.$line-height-md;
+    margin: 15px auto;
+    font-weight: type.$font-weight-bold;
+    width: 60%;
+    text-align: center;
+  }
+  p {
+    font-size: type.$font-size-default;
+    color: colors.$text-color-secondary-light;
+    width: 60%;
+    margin: 5px 20px;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+  }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        height: auto;
+        padding: 30px 0px;
+    }
+  .hero > div {
+    padding: 0px;
+  }
+  .hero h1 {
+    font-size: type.$font-size-2xl !important;
+    line-height: type.$line-height-2xs !important;
+    text-align: center;
+    width:80%;
+  }
+  .hero p {
+    font-size: type.$font-size-sm;
+    color: colors.$text-color-secondary-light;
+    margin: 0px;
+    text-align: center;
+    width: 80%;
+  }
+  .call-to-action {
+    margin: 10px 0px;
+  }
+}
