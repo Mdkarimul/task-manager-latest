@@ -28,7 +28,6 @@ todoServie = inject(TodoService);
   }
 
   test() {
-    alert('active')
   }
   
 

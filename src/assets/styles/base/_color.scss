@@ -83,9 +83,21 @@
 
 
 //bg color variables =================================>
+$text-primary-light:var(--black-50);
+$text-secondary-ligth:var(--black-100);
+$text-tertiary-light:var(--black-200);
+
+
+$text-primary-dark:var(--white-50);
+$text-secondary-dark:var(--white-100);
+$text-tertiary-dark:var(--white-200);
+
+
+//text colors variables==============================>
 $bg-primary-light:var(--blue-400);
 $bg-secondary-ligth:var(--blue-300);
 $bg-tertiary-light:var(--blue-200);
+
 
 $bg-primary-dark:var(--black-50);
 $bg-secondary-dark:var(--black-100);

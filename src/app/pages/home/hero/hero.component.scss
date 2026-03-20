@@ -2,6 +2,7 @@
 @use "../../../../assets/styles/base/typography" as type;
 
 .hero {
+  border: 1px solid red;
   width: 100%;
   height: calc(100vh - 15vh);
   display: flex;
@@ -28,20 +29,41 @@
   }
   h1 {
     color: colors.$text-color-primary-dark;
-    font-size: type.$font-size-5xl;
+    font-size: type.$font-size-4xl;
     line-height: type.$line-height-md;
     margin: 15px auto;
     font-weight: type.$font-weight-bold;
     width: 60%;
     text-align: center;
+    text-transform:uppercase;
   }
   p {
-    font-size: type.$font-size-default;
-    color: colors.$text-color-secondary-light;
+    font-size: type.$font-size-md;
+    color:colors.$bg-tertiary-light;
     width: 60%;
     margin: 5px 20px;
     text-align: center;
     font-weight: var(--font-weight-medium);
+  }
+
+  .gradient-effect {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid red;
+    position: absolute;
+    background-color: #d1b200;
+    filter: blur(300px);
+     animation: 5s infinite pulse;
+  }
+}
+
+@keyframes pulse {
+  0% {
+   filter:  blur(200px);
+  }
+  100%{
+  filter: blur((300px));
   }
 }
 
@@ -54,19 +76,19 @@
     padding: 0px;
   }
   .hero h1 {
-    font-size: type.$font-size-2xl !important;
-    line-height: type.$line-height-2xs !important;
+    font-size: type.$font-size-3xl !important;
+    line-height: type.$line-height-sm;
     text-align: center;
-    width:80%;
+    width:90%;
+    margin:30px auto;
   }
   .hero p {
-    font-size: type.$font-size-sm;
-    color: colors.$text-color-secondary-light;
+    font-size: type.$font-size-md;
     margin: 0px;
     text-align: center;
     width: 80%;
-  }
+  }                                   
   .call-to-action {
-    margin: 10px 0px;
+    margin: 25px 0px;                         
   }
 }

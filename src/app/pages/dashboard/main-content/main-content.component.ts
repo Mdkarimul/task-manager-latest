@@ -7,7 +7,7 @@ import { single } from 'rxjs';
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [RouterOutlet,NgStyle],
+  imports: [RouterOutlet, NgStyle],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
 })
@@ -15,28 +15,28 @@ export class MainContentComponent {
 
 
   sideNavService = inject(SidenavService);
-  
+
 
   collapseProfile = signal<boolean>(false);
-  constructor(){
+  constructor() {
     console.log();
   }
 
 
-  ngOnInit(){
- 
-  }
-
-  
-
- 
-
-  ngAfterViewInit(){
+  ngOnInit() {
 
   }
 
-  showProfile(){
+
+
+
+
+  ngAfterViewInit() {
+
+  }
+
+  showProfile() {
     this.collapseProfile.set(!this.collapseProfile());
   }
-  
+
 }
